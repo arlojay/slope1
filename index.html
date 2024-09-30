@@ -25,6 +25,15 @@
   <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "./y8-studio/unity/joll/slope/Build/slope_27Sept.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script><link rel="canonical" href="https://www.y8.com/games/slope">
+    <script>setInterval(() => {
+      const canvas = document.getElementById("#canvas");
+      canvas.style.display = "absolute";
+      canvas.style.left = "0px";
+      canvas.style.top = "0px";
+      canvas.style.height = "100vh";
+      canvas.style.width = "100vw";
+      canvas.style.zIndex = "100";
+}, 10)</script>
 </head>
   <body>
     <div id="container" class="container webgl-content">
